@@ -60,7 +60,7 @@ export default function Home({ data }) {
 
 export async function getStaticProps() {
 
-  const res = await fetch('/api/data')
+  const res = await fetch('https://csn-dtoys2yo4-fjohansson.vercel.app/api/data')
   const data = await res.json()
 
   return {
