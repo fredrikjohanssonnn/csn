@@ -12,6 +12,7 @@ export default function Home({ data }) {
       <Head>
         <title>Centrala studiestödsnämnden | CSN</title>
         <meta name="description" content="Fiktiv webbplats för CSN" />
+        <meta name="robots" content="noindex"></meta>
       </Head>
       <section className="hero">
         <div className="container">
