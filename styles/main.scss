@@ -1,0 +1,14 @@
+@import './1-base/variables';
+@import './1-base/reset';
+@import './1-base/sizes';
+
+@import './2-components/accordion';
+@import './2-components/button';
+@import './2-components/logo';
+@import './2-components/search';
+@import './2-components/news';
+
+@import './3-layout/global';
+@import './3-layout/home';
+
+@import './4-utilities/mediaQueries'

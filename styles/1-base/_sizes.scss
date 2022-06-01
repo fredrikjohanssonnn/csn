@@ -1,0 +1,27 @@
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(252, 252, 252);
+    color: $quaternary-color;
+    font-weight: $font-regular;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 4.8rem;
+    line-height: 1.2;
+    letter-spacing: -0.2rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+    line-height: 1.6;
+}

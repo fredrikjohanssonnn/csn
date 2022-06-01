@@ -1,0 +1,45 @@
+.search {
+
+    position: relative;
+    width: 50%;
+
+    &__input {
+        padding: 2.5rem 6rem;
+        width: 100%;
+        font-size: 1.6rem;
+        color: $tertiary-color;
+        background-color: $input-color;
+        outline: none;
+        border: none;
+        border-radius: $default-radius;
+        font-family: inherit;
+
+        &:active,
+        &:focus {
+            background-color: $quaternary-color;
+
+            &::placeholder {
+                color: $tertiary-color;
+            }
+
+        }
+
+        &::placeholder {
+            color: $placeholder-color;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top:50%;
+        left:2rem;
+        transform: translateY(-50%);
+        left: 2rem;
+        width: 2rem;
+        height: 2rem;
+
+        &--focused {
+            stroke: $tertiary-color;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.btn {
+    background-color: $secondary-color;
+    padding: 2rem 3rem;
+    border-radius: $default-radius;
+    color: $tertiary-color;
+
+    &--underline {
+        text-decoration: underline;
+    }
+
+    &:hover {
+        background-color: $secondary-color-hover;
+    }
+
+    &__secondary {
+        background-color: transparent;
+        color: #fff;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+            background-color: transparent;
+        }
+    }
+}

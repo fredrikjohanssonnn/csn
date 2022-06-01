@@ -1,0 +1,33 @@
+.accordion {
+    background-color: $accordion-color;
+    padding: 4rem;
+    border-radius: $default-radius;
+    font-weight: $font-medium;
+    cursor: pointer;
+
+    &__circle {
+        margin-right: 2rem;
+
+        & > .icon {
+            width: 3rem;
+        }
+    }
+}
+
+.accordion-container {
+    margin-bottom: 3rem;
+}
+
+.extended-accordion {
+    padding: 3rem 4rem;
+    background-color: rgb(231, 231, 231);
+
+    & > p {
+        line-height: 1.8;
+    }
+
+    &__link {
+        color: dodgerblue;
+        text-decoration: underline;
+    }
+}

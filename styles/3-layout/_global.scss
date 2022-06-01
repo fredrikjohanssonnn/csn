@@ -1,0 +1,42 @@
+.container {
+    max-width: 170rem;
+    padding: 0 4rem;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+
+    & > * {
+        z-index: 1;
+    }
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-divided {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 4rem;
+    max-width: 170rem;
+    margin: 0 auto;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.double-column {
+
+    flex: 4;
+}

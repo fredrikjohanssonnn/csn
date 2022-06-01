@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "question": "Väntar du på beslut eller pengar?",
+        "answer": "Här kan du kan läsa om våra handlägg­ningstider och om vad du behöver göra för att få din första utbetalning. Du som studerar på gymnasiet kan även se när studiebidraget betalas ut.",
+        "link": "https://www.csn.se/vantar-pa-beslut-eller-pengar.html"
+    },
+    {
+        "id": 2,
+        "question": "Har du svårt att betala på ditt studielån? Så ansöker du om att betala mindre",
+        "answer": "Om du har svårt att betala på ditt studielån kan du ansöka om att betala mindre under en tid. Det kallas för nedsättning och det kan du ansöka om med hänsyn till din inkomst eller synnerliga skäl. Om du studerar med studiestöd från CSN, får du också nedsättning för den period som du får utbetalningar från oss. Om du får nedsättning kan det innebära att dina framtida årsbelopp kan bli högre.",
+        "link": "https://www.csn.se/betala-tillbaka/betala-tillbaka-studielan/betala-mindre-under-en-tid.html"
+    },
+    {
+        "id": 3,
+        "question": "Mitt autogiro har inte dragits",
+        "answer": "Banken gör två försök att dra beloppen via autogiro. Första försöket görs på förfallodagen. Finns det inte täckning på kontot gör banken ett nytt försök nästkommande vardag. Därefter gör inte banken några fler försök. Banken gör ofta sina dragningsförsök tidigt på morgonen, men det kan ske när som helst under dagen. Du har då själv möjlighet att göra en egen inbetalning till CSN. Om du inte har tillgång till ditt OCR-nummer kan du använda ditt personnummer (ÅÅMMDDXXXX) utan bindestreck eller mellanslag. Vi har olika bankgironummer beroende på vilket lån du har. Kontrollera vilket lån du har och betala till rätt bankgironummer.",
+        "link": "https://www.csn.se/fragor-och-svar/mitt-autogiro-har-inte-dragits.html"
+    }
+]
