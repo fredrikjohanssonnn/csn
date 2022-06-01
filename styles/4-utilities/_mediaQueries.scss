@@ -73,8 +73,25 @@
 
     .extended-accordion {
 
+        max-width: 100%;
+
         & > * {
             font-size: 1.4rem;
+        }
+
+        &__link {
+            background-color: $secondary-color;
+            color: $tertiary-color;
+            text-decoration: none;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            border-radius: $default-radius;
+
+            &:hover,
+            &:focus {
+                background-color: $secondary-color-hover;
+            }
         }
     }
 
