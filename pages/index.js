@@ -5,7 +5,9 @@ import Logo from '../components/Logo'
 import News from '../components/News'
 import Search from '../components/Search'
 
-export default function Home({ data }) {
+import { articles } from '../lib/notion'
+
+export default function Home({ articles }) {
 
   return (
       <>
@@ -40,15 +42,15 @@ export default function Home({ data }) {
               </Link>
             </div>
           </div>
-          <Search />
+          <Search articles={articles} />
         </div>
       </section>
       <div className="flex-divided">
           <section className="faq double-column">
               <h3 className="faq__heading">Vanliga frågor</h3>
               <div className="faq__list">
-                {data.map(({ id, question, answer, link }) => (
-                  <Accordion key={id} answer={answer} question={question} link={link} />
+              {articles.slice(0,3).map(props => (
+                  <Accordion key={props.id} {...props} />
                 ))}
             </div>
           </section>
@@ -60,13 +62,13 @@ export default function Home({ data }) {
 
 export async function getStaticProps() {
 
-  const res = await fetch('https://csn-rho.vercel.app//api/data')
-  const data = await res.json()
+  let { results } = await articles()
 
   return {
     props: {
-      data,
+      articles: results
     },
+    revalidate: 10,
   }
 }
 

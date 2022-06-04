@@ -1,7 +1,11 @@
+.search-container {
+    position: relative;
+    width: 50%;
+}
+
 .search {
 
     position: relative;
-    width: 50%;
 
     &__input {
         padding: 2.5rem 6rem;
@@ -40,6 +44,38 @@
 
         &--focused {
             stroke: $tertiary-color;
+        }
+    }
+}
+
+.searchResults {
+    position: absolute;
+    background-color: $quaternary-color;
+    color: $tertiary-color;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    z-index: 10;
+    font-size: 1.4rem;
+    border-bottom-left-radius: $default-radius;
+    border-bottom-right-radius: $default-radius;
+    margin-top: 1rem;
+    width: 100%;
+
+    & > ul li {
+
+        &:not(:last-child){
+            border-bottom: 1px solid rgb(207, 207, 207);
+        }
+    }
+    
+    & > ul li a {
+
+        padding: 1.5rem 0;
+        padding-left: 1rem;
+        width: calc(100% - 1rem);
+        display: block;
+
+        &:hover {
+            background-color: #e7e7e7;
         }
     }
 }

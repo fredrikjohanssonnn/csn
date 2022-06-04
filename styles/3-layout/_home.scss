@@ -2,20 +2,7 @@
     position: relative;
     background-color: $primary-color;
     padding-bottom: 8rem;
-    
-    &::before {
-        content: "";
-        background-image: url('../../public/bg.jpg');
-        background-position: center;
-        background-size: cover;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        z-index: 0;
-        opacity: 0.08;
-    }
+ 
 }
 
 .introduction {
