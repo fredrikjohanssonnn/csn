@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import Link from 'next/link'
 
-const Accordion = ({ question, answer, link }) => {
+const Accordion = ({ properties }) => {
 
     const [toggle, setToggle] = useState(false)
+    console.log(properties)
 
     return (
         <div className="accordion-container">
@@ -20,13 +21,13 @@ const Accordion = ({ question, answer, link }) => {
                         </svg>
                     )}
                 </div>
-                <p>{question}</p>
+                <p>{properties.Name.title[0].plain_text}</p>
             </div>
         </div>
         {toggle && (
             <div className="extended-accordion">
-                <p>{answer}</p><br></br>
-                <Link passHref href={link}>
+                <p>{properties.Description.rich_text[0].plain_text}</p><br></br>
+                <Link passHref href={'/'}>
                     <a className="extended-accordion__link">Läs mer här</a>
                 </Link>
             </div>
